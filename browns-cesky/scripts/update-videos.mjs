@@ -74,7 +74,7 @@ export async function updateVideos() {
           category: videoCategory(v.title),
         });
       }
-      report.push({ id: ch.id, ok: true, items: items.length });
+      report.push({ id: ch.id, ok: true, items: items.length, ...(items.length || ch.filter ? {} : { warning: 'Feed kanálu neobsahuje žádná videa' }) });
     } catch (err) {
       report.push({ id: ch.id, ok: false, error: err.message.slice(0, 200) });
     }
@@ -86,7 +86,8 @@ export async function updateVideos() {
   const ok = report.some((r) => r.ok);
   if (ok) await writeJson('videos.json', { ...prev, updatedAt: new Date().toISOString(), origin: 'automatika', items });
   await writeJson('../../state/youtube.json', state);
-  await recordStatus('videos', { ok, message: ok ? `Videí: ${items.length}` : 'Žádný kanál neodpověděl', details: { channels: report } });
+  const warn = report.filter((r) => r.warning).map((r) => `${r.id}: ${r.warning}`);
+  await recordStatus('videos', { ok: ok && !warn.length, message: (ok ? `Videí: ${items.length}` : 'Žádný kanál neodpověděl') + (warn.length ? ` | ${warn.join(' | ')}` : ''), details: { channels: report } });
   log('videos', JSON.stringify(report));
   return ok;
 }

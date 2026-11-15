@@ -42,13 +42,18 @@ export function parseFeed(xml) {
         url: link?.['@href'] || '',
         publishedAt: e.published || e.updated || null,
         description: stripHtml(txt(e.summary) || txt(e['media:group']?.['media:description'])).slice(0, 600),
-        videoId: e['yt:videoId'] || null,
+        videoId:
+          (e['yt:videoId'] != null ? String(txt(e['yt:videoId'])) : null) ||
+          String(txt(e.id) || '').match(/yt:video:([\w-]{11})/)?.[1] ||
+          String(link?.['@href'] || '').match(/[?&]v=([\w-]{11})/)?.[1] ||
+          null,
         thumbnail: e['media:group']?.['media:thumbnail']?.['@url'] || null,
         author: txt(e.author?.name) || null,
       };
     });
   }
-  throw new Error('Neznámý formát feedu');
+  const head = String(xml).trim().slice(0, 80).replace(/\s+/g, ' ');
+  throw new Error(`Odpověď není RSS ani Atom (začátek: „${head}“)`);
 }
 
 export async function readSource(source) {
