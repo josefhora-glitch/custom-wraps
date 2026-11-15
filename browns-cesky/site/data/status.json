@@ -1,0 +1,13 @@
+{
+  "updatedAt": "2026-11-15T06:30:00.000Z",
+  "tasks": {
+    "schedule": { "ok": false, "origin": "pocatecni-naplneni", "lastAttemptAt": "2026-11-15T06:30:00.000Z", "message": "Čeká na první běh automatiky. Zobrazený rozpis je ručně naplněný z veřejných zdrojů." },
+    "standings": { "ok": false, "origin": "pocatecni-naplneni", "lastAttemptAt": "2026-11-15T06:30:00.000Z", "message": "Čeká na první běh automatiky. Zobrazena jen AFC North před 10. týdnem." },
+    "stats": { "ok": false, "origin": "pocatecni-naplneni", "lastAttemptAt": "2026-11-15T06:30:00.000Z", "message": "Čeká na první běh automatiky." },
+    "roster": { "ok": false, "origin": "pocatecni-naplneni", "lastAttemptAt": "2026-11-15T06:30:00.000Z", "message": "Čeká na první běh automatiky." },
+    "news": { "ok": false, "origin": "pocatecni-naplneni", "lastAttemptAt": "2026-11-15T06:30:00.000Z", "message": "Čeká na první běh automatiky. Zobrazené aktuality jsou redakční počáteční naplnění." },
+    "videos": { "ok": false, "origin": "pocatecni-naplneni", "lastAttemptAt": "2026-11-15T06:30:00.000Z", "message": "Čeká na první běh automatiky." },
+    "games": { "ok": false, "origin": "pocatecni-naplneni", "lastAttemptAt": "2026-11-15T06:30:00.000Z", "message": "Čeká na první běh automatiky. Preview 10. týdne je redakční počáteční naplnění." }
+  },
+  "run": null
+}

@@ -1,0 +1,580 @@
+{
+  "season": 2026,
+  "updatedAt": "2026-11-15T06:30:00.000Z",
+  "source": {
+    "name": "Více veřejných zdrojů (viz seznam)",
+    "url": "https://www.nfl.com/schedules/2026/by-team/cleveland-browns"
+  },
+  "sources": [
+    {
+      "name": "CBS Sports – rozpis Browns",
+      "url": "https://www.cbssports.com/nfl/teams/CLE/cleveland-browns/schedule/"
+    },
+    {
+      "name": "NFL.com – rozpis Browns 2026",
+      "url": "https://www.nfl.com/schedules/2026/by-team/cleveland-browns"
+    },
+    {
+      "name": "FOX 8 – výsledky Browns 2026",
+      "url": "https://fox8.com/news/cleveland-browns-2026-season-record-and-results/"
+    },
+    {
+      "name": "ClevelandBrowns.com – oznámení rozpisu",
+      "url": "https://www.clevelandbrowns.com/news/browns-announce-the-2026-schedule"
+    }
+  ],
+  "origin": "pocatecni-naplneni",
+  "verified": false,
+  "note": "Počáteční ruční naplnění z veřejných zdrojů (vyhledávání) před prvním během automatiky. Neověřeno sportovním datovým zdrojem – po prvním úspěšném běhu bude nahrazeno.",
+  "record": {
+    "overall": "5-4",
+    "home": null,
+    "away": null,
+    "standingSummary": "3. místo v AFC North"
+  },
+  "byeWeeks": [
+    11
+  ],
+  "games": [
+    {
+      "id": "seed-2026-w1",
+      "week": 1,
+      "weekLabel": "Týden 1",
+      "seasonType": "REG",
+      "date": "2026-09-13T17:00:00Z",
+      "timeTbd": true,
+      "opponent": {
+        "abbr": "JAX",
+        "name": "Jacksonville Jaguars",
+        "record": null
+      },
+      "homeAway": "away",
+      "neutral": false,
+      "venue": {
+        "name": "EverBank Stadium",
+        "city": "Jacksonville",
+        "state": "FL"
+      },
+      "status": "final",
+      "statusDetail": "Final",
+      "score": {
+        "browns": 10,
+        "opp": 34
+      },
+      "result": "L",
+      "ot": false,
+      "broadcast": null,
+      "links": {
+        "espn": null
+      },
+      "note": null
+    },
+    {
+      "id": "seed-2026-w2",
+      "week": 2,
+      "weekLabel": "Týden 2",
+      "seasonType": "REG",
+      "date": "2026-09-20T17:00:00Z",
+      "timeTbd": true,
+      "opponent": {
+        "abbr": "TB",
+        "name": "Tampa Bay Buccaneers",
+        "record": null
+      },
+      "homeAway": "away",
+      "neutral": false,
+      "venue": {
+        "name": "Raymond James Stadium",
+        "city": "Tampa",
+        "state": "FL"
+      },
+      "status": "final",
+      "statusDetail": "Final",
+      "score": {
+        "browns": 23,
+        "opp": 19
+      },
+      "result": "W",
+      "ot": false,
+      "broadcast": null,
+      "links": {
+        "espn": null
+      },
+      "note": null
+    },
+    {
+      "id": "seed-2026-w3",
+      "week": 3,
+      "weekLabel": "Týden 3",
+      "seasonType": "REG",
+      "date": "2026-09-27T17:00:00Z",
+      "timeTbd": true,
+      "opponent": {
+        "abbr": "CAR",
+        "name": "Carolina Panthers",
+        "record": null
+      },
+      "homeAway": "home",
+      "neutral": false,
+      "venue": {
+        "name": "Huntington Bank Field",
+        "city": "Cleveland",
+        "state": "OH"
+      },
+      "status": "final",
+      "statusDetail": "Final",
+      "score": {
+        "browns": 21,
+        "opp": 18
+      },
+      "result": "W",
+      "ot": false,
+      "broadcast": null,
+      "links": {
+        "espn": null
+      },
+      "note": null
+    },
+    {
+      "id": "seed-2026-w4",
+      "week": 4,
+      "weekLabel": "Týden 4",
+      "seasonType": "REG",
+      "date": "2026-10-04T17:00:00Z",
+      "timeTbd": true,
+      "opponent": {
+        "abbr": "PIT",
+        "name": "Pittsburgh Steelers",
+        "record": null
+      },
+      "homeAway": "home",
+      "neutral": false,
+      "venue": {
+        "name": "Huntington Bank Field",
+        "city": "Cleveland",
+        "state": "OH"
+      },
+      "status": "final",
+      "statusDetail": "Final",
+      "score": {
+        "browns": 27,
+        "opp": 24
+      },
+      "result": "W",
+      "ot": false,
+      "broadcast": null,
+      "links": {
+        "espn": null
+      },
+      "note": null
+    },
+    {
+      "id": "seed-2026-w5",
+      "week": 5,
+      "weekLabel": "Týden 5",
+      "seasonType": "REG",
+      "date": "2026-10-11T17:00:00Z",
+      "timeTbd": true,
+      "opponent": {
+        "abbr": "NYJ",
+        "name": "New York Jets",
+        "record": null
+      },
+      "homeAway": "away",
+      "neutral": false,
+      "venue": {
+        "name": "MetLife Stadium",
+        "city": "East Rutherford",
+        "state": "NJ"
+      },
+      "status": "final",
+      "statusDetail": "Final",
+      "score": {
+        "browns": 12,
+        "opp": 17
+      },
+      "result": "L",
+      "ot": false,
+      "broadcast": null,
+      "links": {
+        "espn": null
+      },
+      "note": null
+    },
+    {
+      "id": "seed-2026-w6",
+      "week": 6,
+      "weekLabel": "Týden 6",
+      "seasonType": "REG",
+      "date": "2026-10-18T17:00:00Z",
+      "timeTbd": true,
+      "opponent": {
+        "abbr": "BAL",
+        "name": "Baltimore Ravens",
+        "record": null
+      },
+      "homeAway": "home",
+      "neutral": false,
+      "venue": {
+        "name": "Huntington Bank Field",
+        "city": "Cleveland",
+        "state": "OH"
+      },
+      "status": "final",
+      "statusDetail": "Final",
+      "score": {
+        "browns": 13,
+        "opp": 10
+      },
+      "result": "W",
+      "ot": false,
+      "broadcast": null,
+      "links": {
+        "espn": null
+      },
+      "note": null
+    },
+    {
+      "id": "seed-2026-w7",
+      "week": 7,
+      "weekLabel": "Týden 7",
+      "seasonType": "REG",
+      "date": "2026-10-25T17:00:00Z",
+      "timeTbd": false,
+      "opponent": {
+        "abbr": "TEN",
+        "name": "Tennessee Titans",
+        "record": null
+      },
+      "homeAway": "away",
+      "neutral": false,
+      "venue": {
+        "name": "Nissan Stadium",
+        "city": "Nashville",
+        "state": "TN"
+      },
+      "status": "final",
+      "statusDetail": "Final",
+      "score": {
+        "browns": 27,
+        "opp": 24
+      },
+      "result": "W",
+      "ot": false,
+      "broadcast": "CBS",
+      "links": {
+        "espn": null
+      },
+      "note": null
+    },
+    {
+      "id": "seed-2026-w8",
+      "week": 8,
+      "weekLabel": "Týden 8",
+      "seasonType": "REG",
+      "date": "2026-11-01T18:00:00Z",
+      "timeTbd": true,
+      "opponent": {
+        "abbr": "PIT",
+        "name": "Pittsburgh Steelers",
+        "record": null
+      },
+      "homeAway": "away",
+      "neutral": false,
+      "venue": {
+        "name": "Acrisure Stadium",
+        "city": "Pittsburgh",
+        "state": "PA"
+      },
+      "status": "final",
+      "statusDetail": "Final",
+      "score": {
+        "browns": 6,
+        "opp": 27
+      },
+      "result": "L",
+      "ot": false,
+      "broadcast": null,
+      "links": {
+        "espn": null
+      },
+      "note": null
+    },
+    {
+      "id": "seed-2026-w9",
+      "week": 9,
+      "weekLabel": "Týden 9",
+      "seasonType": "REG",
+      "date": "2026-11-08T18:00:00Z",
+      "timeTbd": true,
+      "opponent": {
+        "abbr": "NO",
+        "name": "New Orleans Saints",
+        "record": null
+      },
+      "homeAway": "away",
+      "neutral": false,
+      "venue": {
+        "name": "Caesars Superdome",
+        "city": "New Orleans",
+        "state": "LA"
+      },
+      "status": "final",
+      "statusDetail": "Final/OT",
+      "score": {
+        "browns": 22,
+        "opp": 23
+      },
+      "result": "L",
+      "ot": true,
+      "broadcast": null,
+      "links": {
+        "espn": null
+      },
+      "note": "Prodloužení uvádí CBS Sports – ověřit."
+    },
+    {
+      "id": "seed-2026-w10",
+      "week": 10,
+      "weekLabel": "Týden 10",
+      "seasonType": "REG",
+      "date": "2026-11-15T18:00:00Z",
+      "timeTbd": false,
+      "opponent": {
+        "abbr": "HOU",
+        "name": "Houston Texans",
+        "record": null
+      },
+      "homeAway": "home",
+      "neutral": false,
+      "venue": {
+        "name": "Huntington Bank Field",
+        "city": "Cleveland",
+        "state": "OH"
+      },
+      "status": "scheduled",
+      "statusDetail": null,
+      "score": null,
+      "result": null,
+      "ot": false,
+      "broadcast": "FOX",
+      "links": {
+        "espn": null
+      },
+      "note": null
+    },
+    {
+      "id": "seed-2026-w12",
+      "week": 12,
+      "weekLabel": "Týden 12",
+      "seasonType": "REG",
+      "date": "2026-11-29T18:00:00Z",
+      "timeTbd": false,
+      "opponent": {
+        "abbr": "LV",
+        "name": "Las Vegas Raiders",
+        "record": null
+      },
+      "homeAway": "home",
+      "neutral": false,
+      "venue": {
+        "name": "Huntington Bank Field",
+        "city": "Cleveland",
+        "state": "OH"
+      },
+      "status": "scheduled",
+      "statusDetail": null,
+      "score": null,
+      "result": null,
+      "ot": false,
+      "broadcast": "FOX",
+      "links": {
+        "espn": null
+      },
+      "note": null
+    },
+    {
+      "id": "seed-2026-w13",
+      "week": 13,
+      "weekLabel": "Týden 13",
+      "seasonType": "REG",
+      "date": "2026-12-06T18:00:00Z",
+      "timeTbd": false,
+      "opponent": {
+        "abbr": "CIN",
+        "name": "Cincinnati Bengals",
+        "record": null
+      },
+      "homeAway": "home",
+      "neutral": false,
+      "venue": {
+        "name": "Huntington Bank Field",
+        "city": "Cleveland",
+        "state": "OH"
+      },
+      "status": "scheduled",
+      "statusDetail": null,
+      "score": null,
+      "result": null,
+      "ot": false,
+      "broadcast": "CBS",
+      "links": {
+        "espn": null
+      },
+      "note": null
+    },
+    {
+      "id": "seed-2026-w14",
+      "week": 14,
+      "weekLabel": "Týden 14",
+      "seasonType": "REG",
+      "date": "2026-12-13T18:00:00Z",
+      "timeTbd": false,
+      "opponent": {
+        "abbr": "ATL",
+        "name": "Atlanta Falcons",
+        "record": null
+      },
+      "homeAway": "home",
+      "neutral": false,
+      "venue": {
+        "name": "Huntington Bank Field",
+        "city": "Cleveland",
+        "state": "OH"
+      },
+      "status": "scheduled",
+      "statusDetail": null,
+      "score": null,
+      "result": null,
+      "ot": false,
+      "broadcast": null,
+      "links": {
+        "espn": null
+      },
+      "note": null
+    },
+    {
+      "id": "seed-2026-w15",
+      "week": 15,
+      "weekLabel": "Týden 15",
+      "seasonType": "REG",
+      "date": "2026-12-20T18:00:00Z",
+      "timeTbd": true,
+      "opponent": {
+        "abbr": "NYG",
+        "name": "New York Giants",
+        "record": null
+      },
+      "homeAway": "away",
+      "neutral": false,
+      "venue": {
+        "name": "MetLife Stadium",
+        "city": "East Rutherford",
+        "state": "NJ"
+      },
+      "status": "scheduled",
+      "statusDetail": null,
+      "score": null,
+      "result": null,
+      "ot": false,
+      "broadcast": null,
+      "links": {
+        "espn": null
+      },
+      "note": null
+    },
+    {
+      "id": "seed-2026-w16",
+      "week": 16,
+      "weekLabel": "Týden 16",
+      "seasonType": "REG",
+      "date": "2026-12-27T18:00:00Z",
+      "timeTbd": false,
+      "opponent": {
+        "abbr": "BAL",
+        "name": "Baltimore Ravens",
+        "record": null
+      },
+      "homeAway": "away",
+      "neutral": false,
+      "venue": {
+        "name": "M&T Bank Stadium",
+        "city": "Baltimore",
+        "state": "MD"
+      },
+      "status": "scheduled",
+      "statusDetail": null,
+      "score": null,
+      "result": null,
+      "ot": false,
+      "broadcast": "CBS",
+      "links": {
+        "espn": null
+      },
+      "note": null
+    },
+    {
+      "id": "seed-2026-w17",
+      "week": 17,
+      "weekLabel": "Týden 17",
+      "seasonType": "REG",
+      "date": "2027-01-03T18:00:00Z",
+      "timeTbd": true,
+      "opponent": {
+        "abbr": "IND",
+        "name": "Indianapolis Colts",
+        "record": null
+      },
+      "homeAway": "home",
+      "neutral": false,
+      "venue": {
+        "name": "Huntington Bank Field",
+        "city": "Cleveland",
+        "state": "OH"
+      },
+      "status": "scheduled",
+      "statusDetail": null,
+      "score": null,
+      "result": null,
+      "ot": false,
+      "broadcast": null,
+      "links": {
+        "espn": null
+      },
+      "note": "Soupeře uvádí jen jeden zdroj – ověřit."
+    },
+    {
+      "id": "seed-2026-w18",
+      "week": 18,
+      "weekLabel": "Týden 18",
+      "seasonType": "REG",
+      "date": "2027-01-10T18:00:00Z",
+      "timeTbd": true,
+      "opponent": {
+        "abbr": "CIN",
+        "name": "Cincinnati Bengals",
+        "record": null
+      },
+      "homeAway": "away",
+      "neutral": false,
+      "venue": {
+        "name": "Paycor Stadium",
+        "city": "Cincinnati",
+        "state": "OH"
+      },
+      "status": "scheduled",
+      "statusDetail": null,
+      "score": null,
+      "result": null,
+      "ot": false,
+      "broadcast": null,
+      "links": {
+        "espn": null
+      },
+      "note": "Datum a čas oznámí NFL později."
+    }
+  ],
+  "warnings": [
+    "Časy výkopů u odehraných zápasů nejsou ověřeny; u týdnů 15, 17 a 18 nejsou časy/soupeři definitivně potvrzeni."
+  ]
+}

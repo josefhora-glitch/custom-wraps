@@ -1,0 +1,113 @@
+{
+  "_poznamka": "Seznam důvěryhodných zdrojů. tier: 1 = oficiální (Browns/NFL), 2 = ověřené americké médium, 3 = agregátor (jen pro objevení zprávy – publikuje se odkaz na původní médium z whitelistu). U zdrojů s více URL se zkouší postupně, první funkční se použije a zapíše do stavu.",
+  "team": {
+    "espnId": "5",
+    "abbr": "CLE",
+    "name": "Cleveland Browns",
+    "nameCs": "Cleveland Browns",
+    "division": "AFC North",
+    "conference": "AFC"
+  },
+  "news": [
+    {
+      "id": "browns-official",
+      "name": "ClevelandBrowns.com",
+      "tier": 1,
+      "official": true,
+      "urls": [
+        "https://www.clevelandbrowns.com/rss/news",
+        "https://www.clevelandbrowns.com/rss/article",
+        "https://www.clevelandbrowns.com/news/rss"
+      ],
+      "requireKeyword": false
+    },
+    {
+      "id": "nfl-official",
+      "name": "NFL.com",
+      "tier": 1,
+      "official": true,
+      "urls": [
+        "https://www.nfl.com/feeds/rss/news",
+        "https://www.nfl.com/rss/rsslanding?searchString=home"
+      ],
+      "requireKeyword": true
+    },
+    {
+      "id": "espn-nfl",
+      "name": "ESPN",
+      "tier": 2,
+      "official": false,
+      "urls": ["https://www.espn.com/espn/rss/nfl/news"],
+      "requireKeyword": true
+    },
+    {
+      "id": "cbs-nfl",
+      "name": "CBS Sports",
+      "tier": 2,
+      "official": false,
+      "urls": ["https://www.cbssports.com/rss/headlines/nfl/"],
+      "requireKeyword": true
+    },
+    {
+      "id": "cleveland-com",
+      "name": "cleveland.com",
+      "tier": 2,
+      "official": false,
+      "urls": [
+        "https://www.cleveland.com/arc/outboundfeeds/rss/category/browns/?outputType=xml",
+        "https://www.cleveland.com/browns/rss.xml"
+      ],
+      "requireKeyword": false
+    },
+    {
+      "id": "google-news",
+      "name": "Google News (agregátor)",
+      "tier": 3,
+      "official": false,
+      "aggregator": true,
+      "urls": [
+        "https://news.google.com/rss/search?q=%22Cleveland+Browns%22+when:2d&hl=en-US&gl=US&ceid=US:en"
+      ],
+      "requireKeyword": true
+    }
+  ],
+  "trustedDomains": {
+    "clevelandbrowns.com": { "name": "ClevelandBrowns.com", "tier": 1, "official": true },
+    "nfl.com": { "name": "NFL.com", "tier": 1, "official": true },
+    "espn.com": { "name": "ESPN", "tier": 2 },
+    "cbssports.com": { "name": "CBS Sports", "tier": 2 },
+    "cleveland.com": { "name": "cleveland.com", "tier": 2 },
+    "theathletic.com": { "name": "The Athletic", "tier": 2 },
+    "nytimes.com": { "name": "The Athletic / NYT", "tier": 2 },
+    "si.com": { "name": "Sports Illustrated", "tier": 2 },
+    "apnews.com": { "name": "Associated Press", "tier": 2 },
+    "profootballtalk.nbcsports.com": { "name": "ProFootballTalk", "tier": 2 },
+    "nbcsports.com": { "name": "NBC Sports", "tier": 2 },
+    "foxsports.com": { "name": "FOX Sports", "tier": 2 },
+    "yahoo.com": { "name": "Yahoo Sports", "tier": 2 },
+    "news5cleveland.com": { "name": "News 5 Cleveland", "tier": 2 },
+    "wkyc.com": { "name": "WKYC 3News", "tier": 2 },
+    "fox8.com": { "name": "FOX 8 Cleveland", "tier": 2 },
+    "dawgsbynature.com": { "name": "Dawgs By Nature", "tier": 2 },
+    "houstontexans.com": { "name": "Houston Texans (oficiální)", "tier": 1, "official": true }
+  },
+  "keywords": {
+    "strong": ["browns", "cleveland browns", "huntington bank field", "dawg pound", "berea"],
+    "weak": ["cleveland", "afc north"],
+    "exclude": ["guardians", "cavaliers", "cavs", "monsters", "ohio state buckeyes"]
+  },
+  "sensitiveTopics": ["injury", "injured", "torn", "acl", "concussion", "ir ", "injured reserve", "trade", "traded", "released", "waived", "fired", "hired", "coach", "coordinator", "suspended", "suspension", "arrest", "retire"],
+  "videos": [
+    { "id": "browns-yt", "name": "Cleveland Browns (YouTube)", "official": true, "handle": "clevelandbrowns", "channelId": null, "filter": null },
+    { "id": "nfl-yt", "name": "NFL (YouTube)", "official": true, "handle": "NFL", "channelId": "UCDVYQ4Zhbm3S2dlz7P1GBDg", "filter": ["browns", "cleveland"] }
+  ],
+  "links": {
+    "official": "https://www.clevelandbrowns.com/",
+    "nflTeam": "https://www.nfl.com/teams/cleveland-browns/",
+    "youtubeBrowns": "https://www.youtube.com/@clevelandbrowns",
+    "youtubeNfl": "https://www.youtube.com/@NFL",
+    "x": "https://x.com/Browns",
+    "instagram": "https://www.instagram.com/browns/",
+    "facebook": "https://www.facebook.com/ClevelandBrowns"
+  }
+}
