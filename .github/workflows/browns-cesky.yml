@@ -1,0 +1,109 @@
+# Cleveland Browns Česky – automatická aktualizace obsahu a nasazení pilotu.
+# POZOR: GitHub spouští plánované (cron) workflow jen z výchozí větve repozitáře.
+# Větev, do které se data commitují, nastavíte proměnnou repozitáře BROWNS_BRANCH (Settings → Variables).
+name: Browns Česky – aktualizace
+
+on:
+  schedule:
+    # 8:00 a 20:00 českého času. Cron je v UTC – plánujeme oba možné sloty (letní i zimní čas)
+    # a skript sám pustí jen ten, který odpovídá pražské hodině.
+    - cron: '7 6,7,18,19 * * *'
+    # Zápasová okna NFL (UTC) – skript okamžitě skončí, pokud Browns právě nehrají.
+    - cron: '*/15 12-23 * * 0'
+    - cron: '*/15 0-5 * * 0,1,2,5'
+    - cron: '*/15 16-23 * * 4,6'
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'Režim: force (vše hned), scheduled, gameday, deploy (jen nasadit)'
+        required: true
+        default: force
+        type: choice
+        options: [force, scheduled, gameday, deploy]
+      regenerate:
+        description: 'Znovu vygenerovat preview/review (jen u force)'
+        type: boolean
+        default: false
+
+concurrency:
+  group: browns-cesky
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+env:
+  BROWNS_BRANCH: ${{ vars.BROWNS_BRANCH || github.ref_name }}
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      HAS_CF: ${{ secrets.CLOUDFLARE_API_TOKEN != '' }}
+    defaults:
+      run:
+        working-directory: browns-cesky
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ env.BROWNS_BRANCH }}
+
+      - name: Určit režim
+        id: mode
+        working-directory: .
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then MODE="${{ inputs.mode }}";
+          elif [ "${{ github.event.schedule }}" = "7 6,7,18,19 * * *" ]; then MODE=scheduled;
+          else MODE=gameday; fi
+          echo "mode=$MODE" >> "$GITHUB_OUTPUT"
+          echo "Režim: $MODE"
+
+      - uses: actions/setup-node@v4
+        if: steps.mode.outputs.mode != 'deploy'
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: browns-cesky/package-lock.json
+
+      - name: Instalace
+        if: steps.mode.outputs.mode != 'deploy'
+        run: npm ci --no-audit --no-fund
+
+      - name: Testy
+        if: steps.mode.outputs.mode == 'force'
+        run: npm test
+
+      - name: Aktualizace obsahu
+        if: steps.mode.outputs.mode != 'deploy'
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          BROWNS_CLAUDE_MODEL: ${{ vars.BROWNS_CLAUDE_MODEL }}
+        run: |
+          EXTRA=""
+          if [ "${{ inputs.regenerate }}" = "true" ]; then EXTRA="--regenerate"; fi
+          node scripts/run.mjs --mode=${{ steps.mode.outputs.mode }} $EXTRA
+
+      - name: Validace dat
+        if: steps.mode.outputs.mode != 'deploy'
+        run: node scripts/validate.mjs
+
+      - name: Commit změn
+        id: commit
+        if: steps.mode.outputs.mode != 'deploy'
+        working-directory: .
+        run: |
+          git config user.name "browns-cesky-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add browns-cesky/site/data browns-cesky/state
+          if git diff --cached --quiet; then echo "changed=false" >> "$GITHUB_OUTPUT"; echo "Beze změn"; exit 0; fi
+          git commit -m "Browns Česky: aktualizace obsahu (${{ steps.mode.outputs.mode }})"
+          for i in 1 2 3 4; do git pull --rebase origin "$BROWNS_BRANCH" && git push origin "HEAD:$BROWNS_BRANCH" && break; sleep $((i*5)); done
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Nasazení na Cloudflare Pages
+        if: (steps.commit.outputs.changed == 'true' || steps.mode.outputs.mode == 'deploy' || steps.mode.outputs.mode == 'force') && env.HAS_CF == 'true'
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: npx --yes wrangler@3.114.0 pages deploy site --project-name "${{ vars.CLOUDFLARE_PAGES_PROJECT || 'browns-cesky' }}" --branch main --commit-dirty=true

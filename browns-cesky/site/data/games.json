@@ -1,0 +1,57 @@
+{
+  "updatedAt": "2026-11-15T06:30:00.000Z",
+  "items": [
+    {
+      "id": "preview-seed-2026-w10",
+      "type": "preview",
+      "eventId": "seed-2026-w10",
+      "gameDate": "2026-11-15T18:00:00Z",
+      "opponent": { "abbr": "HOU", "name": "Houston Texans", "record": null },
+      "homeAway": "home",
+      "venue": { "name": "Huntington Bank Field", "city": "Cleveland", "state": "OH" },
+      "broadcast": "FOX",
+      "records": { "browns": "5-4", "opp": null },
+      "title": "Preview: Browns – Texans. Zastavit sérii proher před volným týdnem",
+      "perex": "Browns (5-4) hostí Houston v posledním zápase před volným týdnem. Po dvou těsných i jasných porážkách venku potřebují doma výhru, aby se udrželi v kontaktu s čelem AFC North.",
+      "form": "Browns vstoupili do sezóny porážkou v Jacksonville, pak vyhráli pět ze šesti zápasů (mj. nad Pittsburghem 27:24 a Baltimorem 13:10). Poslední dva zápasy ale prohráli – 6:27 v Pittsburghu a 22:23 v New Orleans. V AFC North jsou třetí za dvojicí Steelers a Bengals (obě 6-2). Aktuální bilanci Texans nemáme v ověřeném zdroji.",
+      "keyMatchups": [
+        { "title": "Zadní řada Browns bez Hickmana", "text": "Absence safetyho Ronnieho Hickmana (otřes mozku) klade větší nároky na zbytek secondary. Důležité bude, jak obrana zvládne hlubší přihrávky." },
+        { "title": "Ofenzivní lajna Browns proti oslabené defenzivní frontě Texans", "text": "Houston podle oficiálního reportu postrádá defensive enda Danielle Huntera a nejistý je i Will Anderson Jr. Pokud nenastoupí ani jeden, může mít útok Browns víc času v pocket." }
+      ],
+      "keyPlayers": [
+        { "team": "CLE", "name": "Denzel Ward", "why": "Zkušený cornerback, který v týdnu trénoval omezeně, ale je k dispozici – klíčový proti přihrávkové hře soupeře." },
+        { "team": "CLE", "name": "Denzel Boston", "why": "Receiver s nejistým startem (palec u nohy); jeho dostupnost ovlivní možnosti přihrávkové hry." },
+        { "team": "HOU", "name": "Will Anderson Jr.", "why": "Pass rusher vedený jako questionable – jeho start výrazně mění sílu tlaku Texans." }
+      ],
+      "injuries": [
+        { "team": "CLE", "players": [
+          { "name": "Ronnie Hickman", "pos": "S", "status": "Out", "statusCs": "Nehraje (out)", "detail": "otřes mozku" },
+          { "name": "Michael Burton", "pos": "FB", "status": "Out", "statusCs": "Nehraje (out)", "detail": "lýtko" },
+          { "name": "Denzel Boston", "pos": "WR", "status": "Questionable", "statusCs": "Start nejistý (questionable)", "detail": "palec u nohy" }
+        ] },
+        { "team": "HOU", "players": [
+          { "name": "Azeez Al-Shaair", "pos": "LB", "status": "Out", "statusCs": "Nehraje (out)", "detail": "třísla / osobní důvody" },
+          { "name": "Danielle Hunter", "pos": "DE", "status": "Out", "statusCs": "Nehraje (out)", "detail": "hamstring" },
+          { "name": "Brevin Jordan", "pos": "TE", "status": "Out", "statusCs": "Nehraje (out)", "detail": "prst / chodidlo" },
+          { "name": "Will Anderson Jr.", "pos": "DE", "status": "Questionable", "statusCs": "Start nejistý (questionable)", "detail": "kotník" }
+        ] }
+      ],
+      "injuriesSummary": "Browns přijdou o safetyho Hickmana a fullbacka Burtona, Boston je nejistý. Texans mají delší seznam absencí, včetně Huntera a Al-Shaaira; start Andersona je nejistý.",
+      "watchFor": [
+        "Dokáže útok Browns využít oslabenou defenzivní frontu Texans?",
+        "Jak obrana Browns nahradí Hickmana v zadní řadě?",
+        "Výsledek nedělního večerního zápasu Steelers – Bengals určí, jak velkou ztrátu Browns na čelo divize budou mít."
+      ],
+      "expectation": "Domácí prostředí a delší listina absencí soupeře hrají pro Browns. Čekáme spíš těsný, obranný zápas – pět z devíti letošních utkání Browns skončilo rozdílem nejvýše tří bodů.",
+      "dataGaps": "Bilance Texans, týmové statistiky obou celků a konečný seznam neaktivních hráčů zatím nejsou načteny z ověřeného datového zdroje. Údaje o zraněních pocházejí z oficiálního reportu Texans a mediálních převzetí reportu Browns.",
+      "sources": [
+        { "name": "Houston Texans – oficiální injury report", "url": "https://www.houstontexans.com/news/week-10-injury-report-texans-at-browns" },
+        { "name": "Yahoo Sports – injury report Browns", "url": "https://sports.yahoo.com/articles/official-injury-report-browns-week-225951444.html" },
+        { "name": "Yahoo Sports – Week 10 Need to Know", "url": "https://sports.yahoo.com/articles/cleveland-browns-vs-houston-texans-214500062.html" },
+        { "name": "NFL.com – rozpis Browns", "url": "https://www.nfl.com/schedules/2026/by-team/cleveland-browns" }
+      ],
+      "createdAt": "2026-11-15T06:30:00.000Z",
+      "origin": "pocatecni-naplneni"
+    }
+  ]
+}

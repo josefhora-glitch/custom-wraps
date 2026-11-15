@@ -1,0 +1,102 @@
+{
+  "season": 2026,
+  "updatedAt": "2026-11-15T06:30:00.000Z",
+  "origin": "pocatecni-naplneni",
+  "verified": false,
+  "note": "Stav před 10. týdnem podle FOX Sports a Yahoo Sports. Steelers vedou divizi díky tiebreakeru. Tabulka celé AFC zatím nebyla načtena.",
+  "sources": [
+    {
+      "name": "FOX Sports – tabulky NFL",
+      "url": "https://www.foxsports.com/nfl/standings"
+    },
+    {
+      "name": "Yahoo Sports – AFC North Preview, Week 10",
+      "url": "https://sports.yahoo.com/articles/afc-north-preview-week-10-170000590.html"
+    }
+  ],
+  "afcNorth": [
+    {
+      "abbr": "PIT",
+      "name": "Pittsburgh Steelers",
+      "conference": "AFC",
+      "division": "AFC North",
+      "w": 6,
+      "l": 2,
+      "t": 0,
+      "pct": 0.75,
+      "pf": null,
+      "pa": null,
+      "diff": null,
+      "divRecord": null,
+      "confRecord": null,
+      "home": null,
+      "away": null,
+      "streak": null,
+      "seed": null,
+      "clincher": null
+    },
+    {
+      "abbr": "CIN",
+      "name": "Cincinnati Bengals",
+      "conference": "AFC",
+      "division": "AFC North",
+      "w": 6,
+      "l": 2,
+      "t": 0,
+      "pct": 0.75,
+      "pf": null,
+      "pa": null,
+      "diff": null,
+      "divRecord": null,
+      "confRecord": null,
+      "home": null,
+      "away": null,
+      "streak": null,
+      "seed": null,
+      "clincher": null
+    },
+    {
+      "abbr": "CLE",
+      "name": "Cleveland Browns",
+      "conference": "AFC",
+      "division": "AFC North",
+      "w": 5,
+      "l": 4,
+      "t": 0,
+      "pct": 0.5555555555555556,
+      "pf": null,
+      "pa": null,
+      "diff": null,
+      "divRecord": null,
+      "confRecord": null,
+      "home": null,
+      "away": null,
+      "streak": null,
+      "seed": null,
+      "clincher": null
+    },
+    {
+      "abbr": "BAL",
+      "name": "Baltimore Ravens",
+      "conference": "AFC",
+      "division": "AFC North",
+      "w": 4,
+      "l": 5,
+      "t": 0,
+      "pct": 0.4444444444444444,
+      "pf": null,
+      "pa": null,
+      "diff": null,
+      "divRecord": null,
+      "confRecord": null,
+      "home": null,
+      "away": null,
+      "streak": null,
+      "seed": null,
+      "clincher": null
+    }
+  ],
+  "divisions": {},
+  "afc": [],
+  "warnings": []
+}

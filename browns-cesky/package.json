@@ -1,0 +1,24 @@
+{
+  "name": "browns-cesky",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Cleveland Browns Česky – neoficiální český fanouškovský magazín (pilot)",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "update": "node scripts/run.mjs --mode=scheduled",
+    "update:force": "node scripts/run.mjs --mode=force",
+    "update:gameday": "node scripts/run.mjs --mode=gameday",
+    "sports": "node scripts/update-sports.mjs",
+    "news": "node scripts/update-news.mjs",
+    "videos": "node scripts/update-videos.mjs",
+    "games": "node scripts/update-games.mjs",
+    "validate": "node scripts/validate.mjs",
+    "test": "node --test scripts/tests/*.test.mjs",
+    "serve": "npx --yes http-server site -p 8080 -c-1"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^1.8.0",
+    "fast-xml-parser": "^5.12.1"
+  }
+}
