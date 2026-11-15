@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-15T06:30:00.000Z",
+  "updatedAt": "2026-11-15T08:39:10.042Z",
   "items": [
     {
       "id": "2026-11-15-browns-hosti-texans-zraneni",
@@ -14,14 +14,29 @@
       "whyItMatters": "Hickmanova absence oslabuje zadní řadu obrany v zápase, ve kterém Browns potřebují zastavit sérii dvou porážek. Naopak řídnoucí sestava Texans může být pro Browns příležitostí.",
       "unverified": "Informace pocházejí z mediálních převzetí injury reportu; definitivní neaktivní hráče tým oznamuje zhruba 90 minut před výkopem.",
       "category": "zraneni",
-      "tags": ["injury report", "Texans", "10. týden"],
+      "tags": [
+        "injury report",
+        "Texans",
+        "10. týden"
+      ],
       "sensitive": true,
       "needsOfficialConfirmation": true,
       "originalTitle": "Official injury report for the Browns in Week 10 against the Texans",
-      "source": { "name": "Yahoo Sports", "url": "https://sports.yahoo.com/articles/official-injury-report-browns-week-225951444.html", "official": false, "tier": 2 },
+      "source": {
+        "name": "Yahoo Sports",
+        "url": "https://sports.yahoo.com/articles/official-injury-report-browns-week-225951444.html",
+        "official": false,
+        "tier": 2
+      },
       "relatedSources": [
-        { "name": "Houston Texans – oficiální injury report", "url": "https://www.houstontexans.com/news/week-10-injury-report-texans-at-browns" },
-        { "name": "Dawgs By Nature", "url": "https://www.dawgsbynature.com/cleveland-browns-news/137974/browns-texans-week-10-injuries-denzel-boston-will-anderson-marvin-harrison-danielle-hunter" }
+        {
+          "name": "Houston Texans – oficiální injury report",
+          "url": "https://www.houstontexans.com/news/week-10-injury-report-texans-at-browns"
+        },
+        {
+          "name": "Dawgs By Nature",
+          "url": "https://www.dawgsbynature.com/cleveland-browns-news/137974/browns-texans-week-10-injuries-denzel-boston-will-anderson-marvin-harrison-danielle-hunter"
+        }
       ],
       "publishedAt": "2026-11-15T06:30:00.000Z",
       "sourceDateUnknown": true,
@@ -41,12 +56,25 @@
       "whyItMatters": "Výhra nad Houstonem by Browns udržela v kontaktu s čelem divize – jedno z dvojice Steelers/Bengals totiž v tomto kole ztratí.",
       "unverified": "Tabulka je stav před nedělními zápasy podle FOX Sports a Yahoo Sports; po prvním běhu automatiky se nahradí daty z datového zdroje.",
       "category": "tabulka",
-      "tags": ["AFC North", "tabulka"],
+      "tags": [
+        "AFC North",
+        "tabulka"
+      ],
       "sensitive": false,
       "needsOfficialConfirmation": false,
       "originalTitle": "AFC North Preview, Week 10: First place on the line between the Steelers and Bengals",
-      "source": { "name": "Yahoo Sports", "url": "https://sports.yahoo.com/articles/afc-north-preview-week-10-170000590.html", "official": false, "tier": 2 },
-      "relatedSources": [{ "name": "FOX Sports – tabulky", "url": "https://www.foxsports.com/nfl/standings" }],
+      "source": {
+        "name": "Yahoo Sports",
+        "url": "https://sports.yahoo.com/articles/afc-north-preview-week-10-170000590.html",
+        "official": false,
+        "tier": 2
+      },
+      "relatedSources": [
+        {
+          "name": "FOX Sports – tabulky",
+          "url": "https://www.foxsports.com/nfl/standings"
+        }
+      ],
       "publishedAt": "2026-11-15T06:20:00.000Z",
       "sourceDateUnknown": true,
       "createdAt": "2026-11-15T06:30:00.000Z",
@@ -65,12 +93,26 @@
       "whyItMatters": "Po bilanci 5-2 přišly dvě porážky v řadě. Domácí zápas s Houstonem je proto důležitý pro udržení kontaktu s playoff.",
       "unverified": "Podrobný průběh a individuální statistiky doplní automatika po načtení box score z datového zdroje.",
       "category": "zapasy",
-      "tags": ["review", "Saints", "9. týden"],
+      "tags": [
+        "review",
+        "Saints",
+        "9. týden"
+      ],
       "sensitive": false,
       "needsOfficialConfirmation": false,
       "originalTitle": "Browns at Saints – Final",
-      "source": { "name": "NFL.com", "url": "https://www.nfl.com/schedules/2026/by-team/cleveland-browns", "official": true, "tier": 1 },
-      "relatedSources": [{ "name": "CBS Sports – rozpis a výsledky", "url": "https://www.cbssports.com/nfl/teams/CLE/cleveland-browns/schedule/" }],
+      "source": {
+        "name": "NFL.com",
+        "url": "https://www.nfl.com/schedules/2026/by-team/cleveland-browns",
+        "official": true,
+        "tier": 1
+      },
+      "relatedSources": [
+        {
+          "name": "CBS Sports – rozpis a výsledky",
+          "url": "https://www.cbssports.com/nfl/teams/CLE/cleveland-browns/schedule/"
+        }
+      ],
       "publishedAt": "2026-11-15T06:10:00.000Z",
       "sourceDateUnknown": true,
       "createdAt": "2026-11-15T06:30:00.000Z",

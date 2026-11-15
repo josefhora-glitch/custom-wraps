@@ -1,9 +1,241 @@
 {
   "season": 2026,
-  "updatedAt": null,
-  "origin": "pocatecni-naplneni",
-  "verified": false,
-  "note": "Statistiky zatím nebyly načteny z datového zdroje. Ručně je nevyplňujeme, aby nevznikly nepřesnosti.",
-  "leaders": null,
-  "team": []
+  "updatedAt": "2026-11-15T08:38:05.579Z",
+  "source": {
+    "name": "ESPN (veřejná sportovní data)",
+    "url": "https://www.espn.com/nfl/team/_/name/cle/cleveland-browns"
+  },
+  "origin": "automatika",
+  "verified": true,
+  "leaders": {
+    "passing": {
+      "label": "Passing (yardy)",
+      "leaders": [
+        {
+          "id": "3122840",
+          "name": "Deshaun Watson",
+          "pos": "QB",
+          "jersey": "4",
+          "value": 1806,
+          "display": "1,806"
+        },
+        {
+          "id": "4432762",
+          "name": "Shedeur Sanders",
+          "pos": "QB",
+          "jersey": "2",
+          "value": 299,
+          "display": "299"
+        }
+      ]
+    },
+    "rushing": {
+      "label": "Rushing (yardy)",
+      "leaders": [
+        {
+          "id": "4685702",
+          "name": "Quinshon Judkins",
+          "pos": "RB",
+          "jersey": "10",
+          "value": 385,
+          "display": "385"
+        },
+        {
+          "id": "3122840",
+          "name": "Deshaun Watson",
+          "pos": "QB",
+          "jersey": "4",
+          "value": 217,
+          "display": "217"
+        },
+        {
+          "id": "5081397",
+          "name": "Dylan Sampson",
+          "pos": "RB",
+          "jersey": "22",
+          "value": 73,
+          "display": "73"
+        }
+      ]
+    },
+    "receiving": {
+      "label": "Receiving (yardy)",
+      "leaders": [
+        {
+          "id": "4832800",
+          "name": "Denzel Boston",
+          "pos": "WR",
+          "jersey": "12",
+          "value": 507,
+          "display": "507"
+        },
+        {
+          "id": "5083076",
+          "name": "Harold Fannin Jr.",
+          "pos": "TE",
+          "jersey": "44",
+          "value": 453,
+          "display": "453"
+        },
+        {
+          "id": "4870653",
+          "name": "KC Concepcion",
+          "pos": "WR",
+          "jersey": "1",
+          "value": 437,
+          "display": "437"
+        }
+      ]
+    },
+    "sacks": {
+      "label": "Sacky",
+      "leaders": [
+        {
+          "id": "4873232",
+          "name": "Mason Graham",
+          "pos": "DT",
+          "jersey": "94",
+          "value": 4,
+          "display": "4"
+        },
+        {
+          "id": "3040471",
+          "name": "Maliek Collins",
+          "pos": "DT",
+          "jersey": "96",
+          "value": 3.5,
+          "display": "3.5"
+        },
+        {
+          "id": "4605792",
+          "name": "Adin Huntington",
+          "pos": "DE",
+          "jersey": "98",
+          "value": 3.5,
+          "display": "3.5"
+        }
+      ]
+    },
+    "tackles": {
+      "label": "Tackly",
+      "leaders": [
+        {
+          "id": "4876017",
+          "name": "Carson Schwesinger",
+          "pos": "LB",
+          "jersey": "49",
+          "value": 89,
+          "display": "89"
+        },
+        {
+          "id": "3110565",
+          "name": "Quincy Williams",
+          "pos": "LB",
+          "jersey": "5",
+          "value": 62,
+          "display": "62"
+        },
+        {
+          "id": "4569620",
+          "name": "Ronnie Hickman",
+          "pos": "S",
+          "jersey": "33",
+          "value": 57,
+          "display": "57"
+        }
+      ]
+    },
+    "interceptions": {
+      "label": "Interceptions",
+      "leaders": [
+        {
+          "id": "3915535",
+          "name": "Denzel Ward",
+          "pos": "CB",
+          "jersey": "21",
+          "value": 3,
+          "display": "3"
+        },
+        {
+          "id": "4242208",
+          "name": "Grant Delpit",
+          "pos": "S",
+          "jersey": "9",
+          "value": 1,
+          "display": "1"
+        },
+        {
+          "id": "4569620",
+          "name": "Ronnie Hickman",
+          "pos": "S",
+          "jersey": "33",
+          "value": 1,
+          "display": "1"
+        }
+      ]
+    }
+  },
+  "team": [
+    {
+      "key": "ppg",
+      "label": "Body na zápas",
+      "value": "17.9",
+      "rank": "29th"
+    },
+    {
+      "key": "ypg",
+      "label": "Yardy na zápas",
+      "value": "331.2",
+      "rank": "24th"
+    },
+    {
+      "key": "passYpg",
+      "label": "Passing yardy na zápas",
+      "value": "210.4",
+      "rank": "20th"
+    },
+    {
+      "key": "rushYpg",
+      "label": "Rushing yardy na zápas",
+      "value": "97.3",
+      "rank": "25th"
+    },
+    {
+      "key": "thirdDown",
+      "label": "Úspěšnost 3. downů",
+      "value": "34.17",
+      "rank": "29th"
+    },
+    {
+      "key": "turnovers",
+      "label": "Ztráty míče (turnovers)",
+      "value": "11",
+      "rank": "Tied-15th"
+    },
+    {
+      "key": "takeaways",
+      "label": "Získané míče (takeaways)",
+      "value": "12",
+      "rank": "Tied-10th"
+    },
+    {
+      "key": "sacks",
+      "label": "Sacky obrany",
+      "value": "26",
+      "rank": "Tied-4th"
+    },
+    {
+      "key": "ints",
+      "label": "Interceptions obrany",
+      "value": "6",
+      "rank": "Tied-14th"
+    },
+    {
+      "key": "penaltyYds",
+      "label": "Trestné yardy",
+      "value": "563",
+      "rank": null
+    }
+  ],
+  "partial": false
 }

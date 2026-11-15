@@ -1,13 +1,122 @@
 {
-  "updatedAt": "2026-11-15T06:30:00.000Z",
+  "updatedAt": "2026-11-15T08:39:10.330Z",
   "tasks": {
-    "schedule": { "ok": false, "origin": "pocatecni-naplneni", "lastAttemptAt": "2026-11-15T06:30:00.000Z", "message": "Čeká na první běh automatiky. Zobrazený rozpis je ručně naplněný z veřejných zdrojů." },
-    "standings": { "ok": false, "origin": "pocatecni-naplneni", "lastAttemptAt": "2026-11-15T06:30:00.000Z", "message": "Čeká na první běh automatiky. Zobrazena jen AFC North před 10. týdnem." },
-    "stats": { "ok": false, "origin": "pocatecni-naplneni", "lastAttemptAt": "2026-11-15T06:30:00.000Z", "message": "Čeká na první běh automatiky." },
-    "roster": { "ok": false, "origin": "pocatecni-naplneni", "lastAttemptAt": "2026-11-15T06:30:00.000Z", "message": "Čeká na první běh automatiky." },
-    "news": { "ok": false, "origin": "pocatecni-naplneni", "lastAttemptAt": "2026-11-15T06:30:00.000Z", "message": "Čeká na první běh automatiky. Zobrazené aktuality jsou redakční počáteční naplnění." },
-    "videos": { "ok": false, "origin": "pocatecni-naplneni", "lastAttemptAt": "2026-11-15T06:30:00.000Z", "message": "Čeká na první běh automatiky." },
-    "games": { "ok": false, "origin": "pocatecni-naplneni", "lastAttemptAt": "2026-11-15T06:30:00.000Z", "message": "Čeká na první běh automatiky. Preview 10. týdne je redakční počáteční naplnění." }
+    "schedule": {
+      "ok": false,
+      "origin": "automatika",
+      "lastAttemptAt": "2026-11-15T08:38:01.747Z",
+      "message": "HTTP 403 https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/5/schedule?season=2026&seasontype=2"
+    },
+    "standings": {
+      "ok": false,
+      "origin": "automatika",
+      "lastAttemptAt": "2026-11-15T08:38:05.180Z",
+      "message": "HTTP 403 https://site.api.espn.com/apis/v2/sports/football/nfl/standings?season=2026&seasontype=2"
+    },
+    "stats": {
+      "ok": true,
+      "origin": "automatika",
+      "lastAttemptAt": "2026-11-15T08:38:05.579Z",
+      "message": "Aktualizováno",
+      "lastSuccessAt": "2026-11-15T08:38:05.579Z",
+      "details": {
+        "partial": false
+      }
+    },
+    "roster": {
+      "ok": false,
+      "origin": "automatika",
+      "lastAttemptAt": "2026-11-15T08:38:08.734Z",
+      "message": "HTTP 403 https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/5/roster"
+    },
+    "news": {
+      "ok": false,
+      "origin": "automatika",
+      "lastAttemptAt": "2026-11-15T08:39:10.044Z",
+      "message": "Nové: 0, sloučené duplicity: 0, nerelevantní: 0, ve frontě: 83. Funkční zdroje 4/6. Chyby: How will the Browns pressure QB C.J. Stroud? | Burning Quest: 401 {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"invalid x-api-key\"},\"request_id\":\"req_011Ch4QoARaUacFZLXGqH2wi\"} | Quincy Williams Joins the Show - 11.13.26: 401 {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"invalid x-api-key\"},\"request_id\":\"req_011Ch4QoBW4SaL5j9KuQmrAA\"} | Denzel Boston questionable for Week 10 vs. the Texans | Inju: 401 {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"invalid x-api-key\"},\"request_id\":\"req_011Ch4QoCFTVmVgB33pEwzbW\"}",
+      "details": {
+        "sources": [
+          {
+            "id": "browns-official",
+            "name": "ClevelandBrowns.com",
+            "ok": true,
+            "url": "https://www.clevelandbrowns.com/rss/news",
+            "items": 30,
+            "relevant": 5
+          },
+          {
+            "id": "nfl-official",
+            "name": "NFL.com",
+            "ok": false,
+            "error": "Neznámý formát feedu"
+          },
+          {
+            "id": "espn-nfl",
+            "name": "ESPN",
+            "ok": false,
+            "error": "Neznámý formát feedu"
+          },
+          {
+            "id": "cbs-nfl",
+            "name": "CBS Sports",
+            "ok": true,
+            "url": "https://www.cbssports.com/rss/headlines/nfl/",
+            "items": 36,
+            "relevant": 0
+          },
+          {
+            "id": "cleveland-com",
+            "name": "cleveland.com",
+            "ok": true,
+            "url": "https://www.cleveland.com/arc/outboundfeeds/rss/category/browns/?outputType=xml",
+            "items": 50,
+            "relevant": 32
+          },
+          {
+            "id": "google-news",
+            "name": "Google News (agregátor)",
+            "ok": true,
+            "url": "https://news.google.com/rss/search?q=%22Cleveland+Browns%22+when:2d&hl=en-US&gl=US&ceid=US:en",
+            "items": 100,
+            "relevant": 60
+          }
+        ],
+        "model": "claude-opus-5-5"
+      }
+    },
+    "videos": {
+      "ok": true,
+      "origin": "automatika",
+      "lastAttemptAt": "2026-11-15T08:39:10.328Z",
+      "message": "Videí: 0",
+      "lastSuccessAt": "2026-11-15T08:39:10.328Z",
+      "details": {
+        "channels": [
+          {
+            "id": "browns-yt",
+            "ok": true,
+            "items": 0
+          },
+          {
+            "id": "nfl-yt",
+            "ok": true,
+            "items": 0
+          }
+        ]
+      }
+    },
+    "games": {
+      "ok": false,
+      "origin": "automatika",
+      "lastAttemptAt": "2026-11-15T08:39:10.330Z",
+      "message": "Rozpis není ověřen z datového zdroje – preview/review se negenerují."
+    }
   },
-  "run": null
+  "run": {
+    "lastRunAt": "2026-11-15T08:39:10.330Z",
+    "lastMode": "force",
+    "ran": [
+      "all"
+    ]
+  }
 }
