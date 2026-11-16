@@ -132,6 +132,7 @@ export async function updateNews() {
   let skipped = 0;
   const remainingQueue = [];
   const errors = [];
+  let authFailed = false;
 
   for (const cand of candidates) {
     const key = canonicalUrl(cand.url);
@@ -152,7 +153,7 @@ export async function updateNews() {
       merged++;
       continue;
     }
-    if (!hasClaude() || created >= MAX_NEW_PER_RUN) {
+    if (!hasClaude() || authFailed || created >= MAX_NEW_PER_RUN) {
       remainingQueue.push(cand);
       continue;
     }
@@ -182,8 +183,11 @@ export async function updateNews() {
       recent.unshift(item);
       created++;
     } catch (err) {
-      errors.push(`${cand.title.slice(0, 60)}: ${err.message}`);
       remainingQueue.push(cand);
+      if (err.status === 401 || err.status === 403 || /authentication_error|invalid x-api-key/i.test(err.message)) {
+        authFailed = true;
+        errors.push('Neplatný ANTHROPIC_API_KEY (Claude API klíč odmítlo) – zkontrolujte secret v nastavení GitHubu.');
+      } else errors.push(`${cand.title.slice(0, 60)}: ${err.message.slice(0, 200)}`);
     }
   }
 

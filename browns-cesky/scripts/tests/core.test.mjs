@@ -89,3 +89,11 @@ test('pražský čas a změna času', () => {
   assert.equal(pragueParts(new Date('2026-12-01T07:00:00Z')).hour, 8); // zimní čas
   assert.equal(currentSeason(new Date('2027-01-20T00:00Z')), 2026);
 });
+
+test('ID videa se najde i bez pole yt:videoId', async () => {
+  const { parseFeed } = await import('../lib/feeds.mjs');
+  const xml = `<feed xmlns="http://www.w3.org/2005/Atom"><entry><id>yt:video:abcdefghijk</id><title>Browns highlights</title>
+    <link rel="alternate" href="https://www.youtube.com/watch?v=abcdefghijk"/><published>2026-11-15T10:00:00Z</published></entry></feed>`;
+  assert.equal(parseFeed(xml)[0].videoId, 'abcdefghijk');
+  assert.throws(() => parseFeed('<html><body>blocked</body></html>'), /není RSS ani Atom/);
+});
