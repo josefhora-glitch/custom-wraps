@@ -1,16 +1,16 @@
 {
-  "updatedAt": "2026-11-16T02:43:34.390Z",
+  "updatedAt": "2026-11-16T05:44:18.897Z",
   "tasks": {
     "schedule": {
       "ok": false,
       "origin": "automatika",
-      "lastAttemptAt": "2026-11-16T02:43:31.270Z",
+      "lastAttemptAt": "2026-11-16T05:44:15.792Z",
       "message": "HTTP 403 https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/5/schedule?season=2026&seasontype=2"
     },
     "standings": {
       "ok": false,
       "origin": "automatika",
-      "lastAttemptAt": "2026-11-16T02:43:34.390Z",
+      "lastAttemptAt": "2026-11-16T05:44:18.897Z",
       "message": "HTTP 403 https://site.api.espn.com/apis/v2/sports/football/nfl/standings?season=2026&seasontype=2"
     },
     "stats": {
@@ -113,7 +113,7 @@
     }
   },
   "run": {
-    "lastRunAt": "2026-11-16T02:43:34.391Z",
+    "lastRunAt": "2026-11-16T05:44:18.898Z",
     "lastMode": "gameday",
     "ran": [
       "schedule",
